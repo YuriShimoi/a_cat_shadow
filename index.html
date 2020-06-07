@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Grid Engine</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="console">
+      <div class="canvas-filter canvas-bright">
+        <div class="canvas-filter canvas-saturate">
+          <div class="canvas-filter canvas-hue">
+            <div class="canvas-filter canvas-sepia">
+              <canvas id="table" width="480" height="320"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- IMPORTS -->
+    <!-- JQUERY 3.4.1 -->
+		<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+  <script src="maps.js"></script>
+  <script src="objects.js"></script>
+  <script src="display.js"></script>
+  <script src="controller.js"></script>
+  <script src="engine.js"></script>
+  <script src="map_logic.js"></script>
+  <script src="levels.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #03180f;
+  --secondary-color: #093b26;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--primary-color); */
+  background-color: black;
+  color: white;
+}
+
+.canvas-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.canvas-bright {
+  filter: brightness(100%);
+}
+.canvas-saturate {
+  filter: saturate(3.8);
+}
+.canvas-hue {
+  filter: hue-rotate(90deg);
+}
+.canvas-sepia {
+  filter: sepia(100%);
+}
+#table {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  margin: -1px;
+  /* background-color: var(--primary-color); */
+  background-color: black;
+
+  border: 1px solid transparent;
+  image-rendering: optimizeSpeed;             /* Older versions of FF          */
+  image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+  image-rendering: -webkit-optimize-contrast; /* Safari                        */
+  image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+  image-rendering: pixelated;                 /* Awesome future-browsers       */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
